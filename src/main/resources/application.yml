@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: betterreads
+  
+  data:
+    cassandra:
+      keyspace-name: main
+      username: jabAZQjCztDBpqLNabBcXFyi
+      password: bZosQ1jC4ZrxFQBTaegy6iwabZumQaUYnP6nIOediWBCmRe_FzFZa._w4K7K,efqY.Edm4CkM47I6QyE,P,XdCtQtY,DOLmbQxW55LFTktNaJWg25qg2510B9LqANRIT
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+
+astra.db:
+    id: 503d268f-5adc-4f71-bd63-1966a81238b8-1
+    region: europe-west1
+    keyspace: main
+    application.token: AstraCS:jabAZQjCztDBpqLNabBcXFyi:d80b70d152b538a6a8385408d461e95eaf5f9b34460493def5538244f9939535
+    
+spring.main.allow-circular-references: true    
