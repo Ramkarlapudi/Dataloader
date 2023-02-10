@@ -39,6 +39,7 @@ public class DataloaderApplication {
 	
 	@PostConstruct
 	public void start() {
+		/* loading the data */
 		System.out.println("Calling cassandra Instance");
 		Author author =  new Author();
 		author.setId("id");
